@@ -40,8 +40,7 @@ trans.reg=function (formula, data, trans = TRUE)
     var.ABA <- negA.inv %*% Var.B %*% t(negA.inv)
     z.value <- coefs/sqrt(diag(var.ABA))
     p.value <- 2 * (1 - pnorm(abs(z.value)))
-    result <- list(coef = coefs, var = var.ABA, z.value = z.value, 
-        p.value = p.value, call = call)
-    class(result) <- "GPOreg"
+    result=data.frame(cbind(coefs,sqrt(diag(var.ABA)),z.value,p.value)))
+    names(result)=c("Coef","SE","Z","p")
     return(result)
 }
