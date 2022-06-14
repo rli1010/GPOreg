@@ -1,3 +1,6 @@
+library(Rcpp) 
+library(truncnorm)
+
 #simda=read.csv("simdata.csv")
 #source("functions/utils.R")
 
