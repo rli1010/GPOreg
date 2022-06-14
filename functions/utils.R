@@ -1,5 +1,4 @@
-library(Rcpp) 
-library(truncnorm)
+
 
 trans.reg=function (formula, data, trans = TRUE) 
 {#function for fitting the transformed linear model with the GPO
