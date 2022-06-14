@@ -1,3 +1,6 @@
+library(Rcpp) 
+library(truncnorm)
+
 trans.reg=function (formula, data, trans = TRUE) 
 {#function for fitting the transformed linear model with the GPO
     call <- match.call()
@@ -40,7 +43,7 @@ trans.reg=function (formula, data, trans = TRUE)
     var.ABA <- negA.inv %*% Var.B %*% t(negA.inv)
     z.value <- coefs/sqrt(diag(var.ABA))
     p.value <- 2 * (1 - pnorm(abs(z.value)))
-    result=data.frame(cbind(coefs,sqrt(diag(var.ABA)),z.value,p.value)))
+    result=data.frame(cbind(coefs,sqrt(diag(var.ABA)),z.value,p.value))
     names(result)=c("Coef","SE","Z","p")
     return(result)
 }
