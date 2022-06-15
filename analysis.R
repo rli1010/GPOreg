@@ -23,6 +23,6 @@ ff$Coef[-1]/sqrt(sum(ff$Coef[-1]^2))
 #coef in the transformed linear model)
 
 mono.fit=mono.reg(Ylist=c("Y1","Y2","Y3","Y4"),varlist=c("Z1","Z2","Z3","Z4"),
-                  da=simda,n.init=10,resamp=30)  
+                  da=simda,resamp=30)  
 
 mono.fit$est
