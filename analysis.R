@@ -16,7 +16,7 @@ ff
 ff$Coef[-1]/sqrt(sum(ff$Coef[-1]^2))
 
 
-#MRC
+#Rank regression
 #Set resamp to an integer>=200 for real application
 
 #As the sign of beta[1] is fixed to be positive, set the first variable in varlist as a covariate with positive coef (e.g.,  a significant variable with positive 
