@@ -3,4 +3,4 @@ Simulated example dataset and sample code for regression modeling of the GPO wit
 
 Xiangyu Liu, Jing Ning, Xuming He, Barbara C. Tilley, Ruosha Li (2022+) Semiparametric Regression Modelling of the Global Percentile Outcome. Journal of Statistical Planning and Inference. Forthcoming.
 
-See analysis.R for application of the method to an example dataset.
+See analysis.R for application of the method to an example dataset. The package can be found at https://github.com/liuxiangyu127/GPOreg
