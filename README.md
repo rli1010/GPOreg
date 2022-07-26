@@ -11,4 +11,4 @@ https://doi.org/10.1016/j.jspi.2022.06.009.
 
 See analysis.R for application of the method to an example dataset.
 
-The package can be found at https://github.com/liuxiangyu127/GPOreg
+The corresponding R package can be installed at https://github.com/liuxiangyu127/GPOreg
